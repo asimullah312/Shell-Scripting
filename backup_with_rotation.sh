@@ -43,5 +43,11 @@ if [ "$backup_count" -gt "$max_backup" ]; then
 fi
 
 
+<<msg
+crontab sebtance 
+msg
+#* * * * * /bin/bash /home/ubuntu/scripting/backup_with_rotation.sh  /home/ubuntu/scripting /home/ubuntu/backups
+
+
 
 
